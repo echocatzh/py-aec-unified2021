@@ -1,4 +1,4 @@
-# shmzhang@aslp, 2020-04
+# shmzhang@aslp, 2021-04
 import numpy as np
 import config as cfg
 from heig2 import heig2

@@ -5,7 +5,7 @@ from heig2 import heig2
 from stft import istft, stft
 
 
-def aec_dr_bss(num_mics, num_refs, datain):
+def dr_aec_bss(num_mics, num_refs, datain):
     """Perform dr, aec and bss
 
     Args:
@@ -188,7 +188,7 @@ if __name__ == "__main__":
     testdata = [testdata[:, i] for i in range(nummics + numrefs)]
     lenx = len(testdata[0])
     # [N0, N1]
-    output = aec_dr_bss(nummics, numrefs, testdata)
+    output = dr_aec_bss(nummics, numrefs, testdata)
     # stft clips.
     for i in range(N):
         output[i] = output[i][:lenx]
